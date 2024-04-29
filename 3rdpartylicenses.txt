@@ -216,6 +216,9 @@ OTHER DEALINGS IN THE SOFTWARE.
 ngx-clipboard
 MIT
 
+ngx-spinner
+MIT
+
 rxjs
 Apache-2.0
                                Apache License
