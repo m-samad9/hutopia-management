@@ -1,0 +1,16 @@
+RewriteEngine On
+
+# Rule to redirect to /en/index.html if no language is specified
+RewriteCond %{REQUEST_URI} !^/(en|fr)/ [NC]
+RewriteRule ^(.*)$ /en/index.html [L]
+
+# Rule to handle URLs containing /en/
+RewriteRule ^en/.* /en/index.html [L]
+
+# Rule to handle URLs containing /fr/
+RewriteRule ^fr/.* /fr/index.html [L]
+
+# Rule to handle general Angular routes
+RewriteCond %{REQUEST_FILENAME} !-f
+RewriteCond %{REQUEST_FILENAME} !-d
+RewriteRule ^(.*)$ /index.html [L]
