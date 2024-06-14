@@ -10,6 +10,10 @@
 .ni {
   font-family: "NucleoIcons";
 }
+.blue-btn {
+  background-color: #262f4c !important;
+  color: azure !important;
+}
 @charset "UTF-8";
 /*!
 
